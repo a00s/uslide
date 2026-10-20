@@ -1,29 +1,30 @@
 {
+  "TPU_intersection_note": "Intentional retention-rib contact; see tampas_info.json for shell-only clearance.",
   "clip_source": "CLIPES_LATERAIS (current square flush exterior)",
   "sides": {
     "esquerda": {
       "watertight": true,
-      "TPU_intersection_mm3": 0.0,
+      "TPU_intersection_mm3": 0.20417226125057475,
       "clips_intersection_mm3": 0.0,
-      "vertical_clearance_to_clips_mm": 7.180000305175781,
+      "vertical_clearance_to_clips_mm": 0.2800002098083496,
       "mounted_z_mm": [
-        9.300000190734863,
+        2.4000000953674316,
         11.600000381469727
       ],
       "native_3mf_geometry_matches_STL": true,
-      "native_3mf_max_vertex_deviation_mm": 3.3535411120933327e-07
+      "native_3mf_max_vertex_deviation_mm": 8.381508944193457e-08
     },
     "direita": {
       "watertight": true,
-      "TPU_intersection_mm3": 8.673617379884035e-19,
+      "TPU_intersection_mm3": 0.20417226125057367,
       "clips_intersection_mm3": 0.0,
-      "vertical_clearance_to_clips_mm": 7.180000305175781,
+      "vertical_clearance_to_clips_mm": 0.2800002098083496,
       "mounted_z_mm": [
-        9.300000190734863,
+        2.4000000953674316,
         11.600000381469727
       ],
       "native_3mf_geometry_matches_STL": true,
-      "native_3mf_max_vertex_deviation_mm": 3.3535411120933327e-07
+      "native_3mf_max_vertex_deviation_mm": 8.381508944193457e-08
     }
   },
   "profile": {

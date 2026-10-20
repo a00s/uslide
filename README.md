@@ -1,7 +1,7 @@
 # U-Slide DIY para K1C
 
 Câmara em D deitado, sem ilha central, entre slide de microscopia e cobrevidro, com corpo TPU 85A,
-presilhas PLA e tampas eSUN TPU-LW. Desenvolvido para microscópio normal.
+presilhas e tampas PLA. Desenvolvido para microscópio normal.
 
 ## Arquivos atuais
 
@@ -31,7 +31,9 @@ clipes e tampas foram preservados; G-code do corpo atualizado.
 - `revisao/SEQUENCIAL`: geração dos trajetos personalizados do corpo.
 - `BASE_ORIGINAL` e `HISTORICO`: referências e versões anteriores.
 
-A conferência CAD das tampas não encontrou interseção com corpo ou presilhas.
-A expansão do TPU-LW, o encaixe real, a vedação, a folga das objetivas e a troca
+As tampas atuais de PLA têm saia externa longa (7,6mm de engate) e pega
+de12mm. A carcaça rígida não colide com o corpo ou presilhas; três
+nervuras têm interferência radial nominal de0,05mm contra o poço de TPU.
+O encaixe real, a vedação, a folga das objetivas e a troca
 de CO2 precisam ser avaliados fisicamente. O trajeto sequencial experimental do
 corpo não tem a folga lateral do cabeçote confirmada.

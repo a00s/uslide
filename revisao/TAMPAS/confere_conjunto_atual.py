@@ -11,7 +11,7 @@ for side in ['esquerdo','direito']:
 with zipfile.ZipFile(root/'FINAL_K1C/U-Slide_K1C_FINAL.3mf') as z:
  ns={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
  r=E.fromstring(z.read('3D/3dmodel.model'));f=json.loads(z.read('Metadata/project_settings.config'))
- result={'clip_source':'CLIPES_LATERAIS (current square flush exterior)','sides':{},'profile':{k:f.get(k) for k in ['nozzle_temperature','hot_plate_temp','filament_flow_ratio','filament_retraction_length']}}
+ result={'TPU_intersection_note':'Intentional retention-rib contact; see tampas_info.json for shell-only clearance.','clip_source':'CLIPES_LATERAIS (current square flush exterior)','sides':{},'profile':{k:f.get(k) for k in ['nozzle_temperature','hot_plate_temp','filament_flow_ratio','filament_retraction_length']}}
  for oid,label in [(4,'esquerda'),(6,'direita')]:
   m,s=load(P/f'Tampa_{label}_montada.stl');printed,_=load(P/f'Tampa_{label}_imprimir.stl')
   o=r.find(f"m:resources/m:object[@id='{oid}']",ns)

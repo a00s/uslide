@@ -4,7 +4,7 @@ ARQUIVOS E PRATOS
 U-Slide_K1C_FINAL.3mf: projeto editavel com quatro pratos.
 01: corpo TPU 85A com CAMARA D SEM ILHA, saia e dois apoios independentes.
 02: duas presilhas PLA, parede externa fechada e contorno do poco.
-03: tampa esquerda eSUN TPU-LW. 04: tampa direita eSUN TPU-LW.
+03: tampa esquerda PLA. 04: tampa direita PLA.
 U-Slide_TPU_POCOS_SEQUENCIAIS_EXPERIMENTAL.gcode: corpo TPU com trajetos
 personalizados. Abrir diretamente para imprimir; refatiar o prato 01
 nao reproduz a sequencia e todas as conexoes personalizadas.
@@ -61,14 +61,21 @@ poco esquerdo inteiro e direito inteiro. Desvios pelo exterior e
 conexoes curtas de preenchimento na base solida; acessos locais aos
 apoios permanecem. Folga lateral fisica do cabecote nao confirmada.
 
-TAMPINHAS DIY
-Apoiam por tres pontos na borda do poco, com encaixe externo folgado.
-Imprimir uma por vez, teto na mesa, abertura para cima, sem suportes.
-Altura maxima montada Z11,6; liberar espaco para objetivas se necessario.
-Respiro lateral com anteparo; conferir se a espuma nao fechou o respiro.
-Perfil INICIAL eSUN TPU-LW: 250 C, mesa 45 C, fluxo 70%, retracao zero.
-Ajuste de expansao/fluxo ainda necessario para a bobina/impressora.
-Fonte: https://www.esun3d.com/etpu-lw-product
-Troca de CO2, evaporacao, esterilidade e compatibilidade com celulas
-nao validadas. A espuma nao equivale a uma membrana validada de CO2.
-Nenhuma mudanca desta revisao foi enviada automaticamente a impressora.
+TAMPAS PLA — SAIA LONGA E PEGA LARGA
+Material confirmado pelo usuario: PLA, perfil220 C/mesa50 C, fluxo98%.
+Pratos03/04, uma tampa por prato, teto e pega apoiados na mesa.
+Camada.08mm, primeira.20mm, sem suportes nem brim, ironing superior.
+Corpo13.4mm de diametro maximo, pega traseira12 x4.6mm, teto1.2mm.
+Saia envolve7.6mm da altura EXTERNA do poco. Tampa total9.2mm, topo
+montadoZ11.6mm (inalterado), baseZ2.4mm, folga.28mm acima dos clipes.
+Encaixe com folga radial.15mm e tres nervuras axiais: interferencia
+radial nominal.05mm SOMENTE nas nervuras, sobre a parede de TPU85A.
+Entrada alargada/chanfrada e recorte frontal liberam o sapato do poco.
+Parte rigida sem nervuras nao colide com TPU no CAD; clipes sem colisao.
+Nao entra no liquido, nao toca o vidro nem bloqueia a camara de cultura.
+Pressao real nao medida: encaixar suavemente; se apertar, ajustar o CAD.
+Retirar pela pega, estabilizando o conjunto, sem puxar pelo TPU.
+Respiro lateral.8x.6mm com anteparo, sem hermeticidade validada.
+Troca deCO2, evaporacao e esterilidade nao validadas.
+Visual: ../revisao/TAMPAS/tampa_preview.png
+Nenhuma impressao foi enviada automaticamente a impressora.
