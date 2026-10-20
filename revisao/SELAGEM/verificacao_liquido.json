@@ -369,5 +369,6 @@
     "liquid_verification_applies_to_previous_channel": true,
     "current_revision": "atualizacao_canal_perfil.json"
   },
-  "geometry_changed_after_verification": true
+  "geometry_changed_after_verification": true,
+  "chamber_D_note": "Liquid meshes updated for visual preview only. Previous containment calculations refer to U revision, not recomputed for D."
 }

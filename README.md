@@ -1,6 +1,6 @@
 # U-Slide DIY para K1C
 
-Canal em U entre slide de microscopia e cobrevidro, com corpo TPU 85A,
+Câmara em D deitado, sem ilha central, entre slide de microscopia e cobrevidro, com corpo TPU 85A,
 presilhas PLA e tampas eSUN TPU-LW. Desenvolvido para microscópio normal.
 
 ## Arquivos atuais
@@ -13,6 +13,11 @@ presilhas PLA e tampas eSUN TPU-LW. Desenvolvido para microscópio normal.
 Pratos: 01 corpo TPU; 02 duas presilhas PLA; 03 tampa esquerda; 04 tampa direita.
 O G-code do corpo contém trajetos personalizados que não são reproduzidos
 simplesmente refatiando o 3MF. As presilhas e tampas são fatiadas a partir do projeto.
+
+[Comparação U anterior / câmara D atual](revisao/CAMARA_D/camara_D_preview.png)
+
+A abertura passou de408 para923mm², mantendo altura0,4mm. Poços,
+clipes e tampas foram preservados; G-code do corpo atualizado.
 
 ## Fontes e conferência
 

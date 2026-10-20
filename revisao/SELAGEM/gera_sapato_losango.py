@@ -77,8 +77,9 @@ for side in [-1,1]:
  local=local+md.Manifold.cube([.35,.5,.44]).translate([6.90,-.25,.2])
  supports=supports+local.rotate([0,0,0 if side<0 else 180]).translate([side*33,5.325,0])
 def export(s,path):
+ s=s.simplify(.00001)
  assert s.status()==md.Error.NoError
- a=s.to_mesh();m=trimesh.Trimesh(np.array(a.vert_properties[:,:3]),np.array(a.tri_verts),process=True);assert m.is_watertight and len(m.faces)>0;m.export(path)
- print(path.name,'components',len(m.split()),'watertight',m.is_watertight)
+ a=s.to_mesh();m=trimesh.Trimesh(np.array(a.vert_properties[:,:3]),np.array(a.tri_verts),process=False);assert m.is_watertight and len(m.faces)>0;m.export(path)
+ print(path.name,'components',len(s.decompose()),'watertight',m.is_watertight)
 export(body,P/'U-Slide_selado.stl');export(body,P/'TPU_montado.stl');export(supports,P/'apoios_cortar.stl');export(body+supports,P/'U-Slide_para_imprimir.stl')
 (P/'sapato_losango_info.json').write_text(json.dumps({'base_mm':BASE,'coverslip_slot_mm':GAP,'assumed_glass_mm':.13,'slot_roof_z':BOTTOM,'diamond_peak_z':PEAK,'wall_horizontal_mm':WALL,'wall_method':'inset actual outer sections, loft at 0.08-mm intervals','dry_root_reinforcement':{'type':'continuous oval dry-side skirt','foot_half_x_mm':5.0,'foot_half_y_mm':6.2,'top_z_mm':2.12,'coverslip_edge_setback_mm':.3,'cavity_preserved':True},'supports':2,'supports_from':'build plate through U opening','support_release_gap_mm':.16,'assembly':'slide, TPU base, coverslip, upper TPU shoe; heat bond after assembly','seal_verified':False},indent=2))

@@ -1,5 +1,5 @@
 {
-  "channel_nominal_width_mm": 5.0,
+  "channel_nominal_width_mm": null,
   "inner_bend_radius_mm": 3.5,
   "outer_bend_radius_mm": 8.5,
   "straight_channel_center_y_mm": -6.8,
@@ -7,5 +7,7 @@
   "manual_supports_preserved": false,
   "liquid_containment_recomputed": false,
   "table_supports": 2,
-  "shoe_revision": "hollow diamond, 0.40-mm insertion slot"
+  "shoe_revision": "hollow diamond, 0.40-mm insertion slot",
+  "current_chamber": "D without island",
+  "current_geometry": "../CAMARA_D/camara_D_info.json"
 }

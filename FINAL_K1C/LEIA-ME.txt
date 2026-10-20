@@ -2,7 +2,7 @@ U-SLIDE K1C — PRESILHAS COM PAREDE EXTERNA, SEM BASE PLA
 
 ARQUIVOS E PRATOS
 U-Slide_K1C_FINAL.3mf: projeto editavel com quatro pratos.
-01: corpo TPU 85A com saia e dois apoios independentes.
+01: corpo TPU 85A com CAMARA D SEM ILHA, saia e dois apoios independentes.
 02: duas presilhas PLA, parede externa fechada e contorno do poco.
 03: tampa esquerda eSUN TPU-LW. 04: tampa direita eSUN TPU-LW.
 U-Slide_TPU_POCOS_SEQUENCIAIS_EXPERIMENTAL.gcode: corpo TPU com trajetos
@@ -38,7 +38,13 @@ alojamento original 76,0 x 25,5 mm. Para slide 76,2 x 25,4 mm faltam
 25,7 mm e quatro furos fechados em ../revisao/CASE_REFERENCIA/.
 Essa base serve APENAS de referencia; nao esta incluida no projeto final.
 
-CORPO TPU — PRESERVADO
+CORPO TPU — CAMARA D, SEM ILHA CENTRAL
+A ilha central foi removida. Camara com fechamento reto emY7.9mm e
+mesmo contorno inferior curvo. Area nominal da abertura922.95mm2
+(antes408.04mm2), altura.4mm, volume planar aproximado369.18uL.
+Pocos, sapatos, clipes e tampas preservados. G-code do corpo refatiado
+e reordenado para a camara nova. Nao usar G-code antigo da versao U.
+Visual: ../revisao/CAMARA_D/camara_D_preview.png
 Slide: 76,2 x 25,4 mm. Cobrevidro: 60 x 24 mm, espessura presumida
 0,13–0,16 mm. Base TPU 0,40 mm, fenda de insercao 0,40 mm sob sapato
 oco. Saia continua fora do cobrevidro. Pocos com altura de 10 mm.
