@@ -50,7 +50,9 @@ def shoe():
  inner=md.Manifold(md.Mesh(verts,np.array(faces,dtype=np.uint32)))
  # Cavity extends past both reservoir ends so no cap is retained.
  # Full coverslip insertion zone stays open: base top to roof underside.
- slot=md.Manifold.cube([60,40,GAP+.002]).translate([3,-20,BASE-.001])
+ # Clear the entire transverse lower D-wall, not only the coverslip side.
+ # The old x=3 start left a 0.6mm bar (x=2.4..3) across the well front.
+ slot=md.Manifold.cube([60,40,GAP+.002]).translate([2.35,-20,BASE-.001])
  # Continuous dry-side skirt, replacing the two isolated buttresses.
  # Oval foot stays on the slide; front edge stops 0.3 mm before coverslip.
  from shapely.affinity import scale
@@ -82,4 +84,4 @@ def export(s,path):
  a=s.to_mesh();m=trimesh.Trimesh(np.array(a.vert_properties[:,:3]),np.array(a.tri_verts),process=False);assert m.is_watertight and len(m.faces)>0;m.export(path)
  print(path.name,'components',len(s.decompose()),'watertight',m.is_watertight)
 export(body,P/'U-Slide_selado.stl');export(body,P/'TPU_montado.stl');export(supports,P/'apoios_cortar.stl');export(body+supports,P/'U-Slide_para_imprimir.stl')
-(P/'sapato_losango_info.json').write_text(json.dumps({'base_mm':BASE,'coverslip_slot_mm':GAP,'assumed_glass_mm':.13,'slot_roof_z':BOTTOM,'diamond_peak_z':PEAK,'wall_horizontal_mm':WALL,'wall_method':'inset actual outer sections, loft at 0.08-mm intervals','dry_root_reinforcement':{'type':'continuous oval dry-side skirt','foot_half_x_mm':5.0,'foot_half_y_mm':6.2,'top_z_mm':2.12,'coverslip_edge_setback_mm':.3,'cavity_preserved':True},'supports':2,'supports_from':'build plate through U opening','support_release_gap_mm':.16,'assembly':'slide, TPU base, coverslip, upper TPU shoe; heat bond after assembly','seal_verified':False},indent=2))
+(P/'sapato_losango_info.json').write_text(json.dumps({'base_mm':BASE,'coverslip_slot_mm':GAP,'assumed_glass_mm':.13,'slot_roof_z':BOTTOM,'lower_crossbar_removed':True,'slot_start_local_x_mm':2.35,'diamond_peak_z':PEAK,'wall_horizontal_mm':WALL,'wall_method':'inset actual outer sections, loft at 0.08-mm intervals','dry_root_reinforcement':{'type':'continuous oval dry-side skirt','foot_half_x_mm':5.0,'foot_half_y_mm':6.2,'top_z_mm':2.12,'coverslip_edge_setback_mm':.3,'cavity_preserved':True},'supports':2,'supports_from':'build plate through U opening','support_release_gap_mm':.16,'assembly':'slide, TPU base, coverslip, upper TPU shoe; heat bond after assembly','seal_verified':False},indent=2))

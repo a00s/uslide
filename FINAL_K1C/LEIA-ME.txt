@@ -40,9 +40,12 @@ Essa base serve APENAS de referencia; nao esta incluida no projeto final.
 
 CORPO TPU — CAMARA D, SEM ILHA CENTRAL
 A ilha central foi removida. Camara com fechamento reto emY7.9mm e
-mesmo contorno inferior curvo. Area nominal da abertura981.60mm2 incluindo os fundos livres dos pocos;
-altura.4mm. Removidas faixas da base que atravessavam o interior dos
-dois pocos; paredes externas preservadas. Volume planar aproximado392.64uL.
+mesmo contorno inferior curvo. Area nominal da abertura922.95mm2, altura.4mm, volume planar aproximado369.18uL.
+FUNDO DOS POCOS RESTAURADO para aderencia ao vidro, como na versao D original.
+Removida SOMENTE a travessa inferior na juncao do poco com o sapato:
+fenda de insercao estendida deXlocal3.00 para2.35mm, entreZ.399 e.801mm.
+Corte e comparacao: ../revisao/CAMARA_D/travessa_antes_depois.png
+Conferencia CAD: fundo igual ao D original; volume da travessa zero nos dois lados.
 Pocos, sapatos, clipes e tampas preservados. G-code do corpo refatiado
 e reordenado para a camara nova. Nao usar G-code antigo da versao U.
 Visual: ../revisao/CAMARA_D/camara_D_preview.png

@@ -9,10 +9,10 @@ for poly in getattr(delta,'geoms',[delta]):
  if poly.area<.000001:continue
  poly=orient(poly,1);added=added+md.CrossSection([list(poly.exterior.coords)[:-1]]+[list(r.coords)[:-1] for r in poly.interiors]).extrude(.4)
 # Preserve original well-liquid preview; extend only the newly opened flat region.
-# Read committed U geometry, so rerunning is idempotent.
+# Read original committed U geometry, so rerunning is idempotent.
 import subprocess
 for h in [1,5,9]:
- raw=subprocess.check_output(['git','show',f'HEAD:revisao/SELAGEM/liquido_{h}mm.stl'])
+ raw=subprocess.check_output(['git','show',f'3ba173b:revisao/SELAGEM/liquido_{h}mm.stl'])
  import io
  m=trimesh.load(io.BytesIO(raw),file_type='stl')
  s=md.Manifold(md.Mesh(np.asarray(m.vertices,dtype=np.float32),np.asarray(m.faces,dtype=np.uint32)))+added

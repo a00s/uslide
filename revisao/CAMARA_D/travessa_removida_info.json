@@ -1,0 +1,11 @@
+{
+  "antes": {
+    "esquerdo": 0.07756869767113296,
+    "direito": 0.07756869781300305
+  },
+  "agora": {
+    "esquerdo": 0.0,
+    "direito": 0.0
+  },
+  "restored_floor_vs_original_D_difference_mm3": 6.237789857054922e-08
+}

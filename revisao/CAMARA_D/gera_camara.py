@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,re,numpy as np
-from shapely.geometry import shape,Polygon,box,mapping,Point
+from shapely.geometry import shape,Polygon,box,mapping
 from shapely.geometry.polygon import orient
 from shapely.ops import unary_union
 P=Path(__file__).resolve().parent;S=P.parent/'SELAGEM'
@@ -10,14 +10,6 @@ old=shape(json.loads((P/'canal_U_anterior.json').read_text()))
 closed=unary_union([old,box(-28.5,7.88,28.5,7.90)])
 assert closed.geom_type=='Polygon' and len(closed.interiors)==1
 chamber=Polygon(closed.exterior)
-# Clear the flat base throughout both reservoir interiors; leave the outer
-# wall and skirt seated on TPU. The old channel stopped part-way into wells.
-from shapely.affinity import translate,scale
-core=Point(0,0).buffer(3.9,resolution=96).intersection(box(-2.4,-10,10,10))
-for side in [-1,1]:
- oriented=core if side==1 else scale(core,xfact=-1,yfact=1,origin=(0,0))
- chamber=chamber.union(translate(oriented,xoff=side*33,yoff=5.325))
-chamber=chamber.buffer(0)
 s=(P/'base_U_anterior.scad').read_text();pts=json.loads(re.search(r'points=(\[.*?\]),paths=',s).group(1));paths=json.loads(re.search(r'paths=(\[.*\])\);',s).group(1))
 outer=Polygon([pts[i] for i in paths[0]])
 plate=orient(outer.difference(chamber),1)
@@ -28,5 +20,5 @@ for ring in [plate.exterior,*plate.interiors]:
 (S/'base_arredondada_2d.scad').write_text('// Camara D deitada, sem ilha. Mesma borda U inferior e pocos.\nmodule original_base_2d() { polygon(points='+json.dumps(points)+',paths='+json.dumps(rings)+'); }\n')
 (S/'canal_arredondado.json').write_text(json.dumps(mapping(chamber)))
 (P/'camara_D.json').write_text(json.dumps(mapping(chamber)))
-info={'shape':'lying D without center island','top_straight_y_mm':7.9,'base_height_mm':.4,'old_channel_area_mm2':old.area,'chamber_area_mm2':chamber.area,'area_ratio':chamber.area/old.area,'old_volume_at_0_4mm_uL':old.area*.4,'new_volume_at_0_4mm_uL':chamber.area*.4,'bounds_mm':chamber.bounds,'reservoir_base_interiors_cleared':True,'well_walls_clips_caps_unchanged':True,'seal_and_optics_not_physically_validated':True}
+info={'shape':'lying D without center island','top_straight_y_mm':7.9,'base_height_mm':.4,'old_channel_area_mm2':old.area,'chamber_area_mm2':chamber.area,'area_ratio':chamber.area/old.area,'old_volume_at_0_4mm_uL':old.area*.4,'new_volume_at_0_4mm_uL':chamber.area*.4,'bounds_mm':chamber.bounds,'wells_clips_caps_unchanged':True,'seal_and_optics_not_physically_validated':True}
 (P/'camara_D_info.json').write_text(json.dumps(info,indent=2));print(json.dumps(info,indent=2))

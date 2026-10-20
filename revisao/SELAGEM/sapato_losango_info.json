@@ -3,6 +3,8 @@
   "coverslip_slot_mm": 0.4,
   "assumed_glass_mm": 0.13,
   "slot_roof_z": 0.8,
+  "lower_crossbar_removed": true,
+  "slot_start_local_x_mm": 2.35,
   "diamond_peak_z": 8.0,
   "wall_horizontal_mm": 0.6,
   "wall_method": "inset actual outer sections, loft at 0.08-mm intervals",
