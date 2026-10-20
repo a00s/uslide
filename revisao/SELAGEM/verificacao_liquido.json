@@ -1,0 +1,373 @@
+{
+  "method": "Exact polyhedral CSG free-space connected components, not CFD or thermal/adhesion simulation",
+  "gap_definition": "Remove TPU within coverslip XY footprint, from z=0.53 to z=0.53+gap. Both glasses remain fixed.",
+  "top_boundary": "Free-space domain capped at liquid fill height; intentionally open reservoir mouths at z=10 mm overflow at fill=10.1 mm.",
+  "bottom_glass_mm": [
+    76.2,
+    25.4,
+    0.9
+  ],
+  "cover_glass_mm": [
+    60,
+    24,
+    0.13
+  ],
+  "base_mm": 0.4,
+  "integrated_support_count": 6,
+  "support_added_volume_mm3": 0.33760088424655854,
+  "cleaned_print_vs_design_difference_mm3": 2.9122256822316415e-06,
+  "body_watertight": true,
+  "body_components": 1,
+  "body_glass_interference_mm3": 1.0148132334464322e-16,
+  "results": [
+    {
+      "gap_mm": 0,
+      "fill_height_mm": 1.0,
+      "component_count": 2,
+      "wet_regions": [
+        {
+          "volume_mm3": 241.36450421762794,
+          "bounds": [
+            -36.900001525878906,
+            -9.346739768981934,
+            0.0,
+            36.900001525878906,
+            9.224989891052246,
+            1.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": false
+        }
+      ],
+      "no_escape": true,
+      "connected": true
+    },
+    {
+      "gap_mm": 0,
+      "fill_height_mm": 5.0,
+      "component_count": 2,
+      "wet_regions": [
+        {
+          "volume_mm3": 761.0946737315411,
+          "bounds": [
+            -36.900001525878906,
+            -9.346739768981934,
+            0.0,
+            36.900001525878906,
+            9.224989891052246,
+            5.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": false
+        }
+      ],
+      "no_escape": true,
+      "connected": true
+    },
+    {
+      "gap_mm": 0,
+      "fill_height_mm": 9.0,
+      "component_count": 2,
+      "wet_regions": [
+        {
+          "volume_mm3": 1194.0139465758184,
+          "bounds": [
+            -36.900001525878906,
+            -9.346739768981934,
+            0.0,
+            36.900001525878906,
+            9.224989891052246,
+            9.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": false
+        }
+      ],
+      "no_escape": true,
+      "connected": true
+    },
+    {
+      "gap_mm": 0,
+      "fill_height_mm": 10.1,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 24931.361793787462,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.1999999999999993,
+            41.0,
+            15.0,
+            10.1
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.02,
+      "fill_height_mm": 1.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 2875.947535946292,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.2000000000000002,
+            41.0,
+            15.0,
+            1.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.02,
+      "fill_height_mm": 5.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 12561.478013493284,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.2000000000000002,
+            41.0,
+            15.0,
+            5.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.02,
+      "fill_height_mm": 9.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 22256.71751329014,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.1999999999999997,
+            41.0,
+            15.0,
+            9.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.02,
+      "fill_height_mm": 10.1,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 24931.664820059825,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.1999999999999993,
+            41.0,
+            15.0,
+            10.1
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.12,
+      "fill_height_mm": 1.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 2877.4628139446836,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.2000000000000002,
+            41.0,
+            15.0,
+            1.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.12,
+      "fill_height_mm": 5.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 12562.993291106783,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.2000000000000002,
+            41.0,
+            15.0,
+            5.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.12,
+      "fill_height_mm": 9.0,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 22258.23279101601,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.1999999999999997,
+            41.0,
+            15.0,
+            9.0
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    },
+    {
+      "gap_mm": 0.12,
+      "fill_height_mm": 10.1,
+      "component_count": 1,
+      "wet_regions": [
+        {
+          "volume_mm3": 24933.18009767423,
+          "bounds": [
+            -41.0,
+            -15.0,
+            -1.1999999999999993,
+            41.0,
+            15.0,
+            10.1
+          ],
+          "contains_reservoirs_and_channel": [
+            true,
+            true,
+            true
+          ],
+          "reaches_exterior": true
+        }
+      ],
+      "no_escape": false,
+      "connected": true
+    }
+  ],
+  "coverslip_fit_sensitivity": [
+    {
+      "thickness_mm": 0.13,
+      "rigid_interference_mm3": 1.0148132334464322e-16,
+      "extra_lip_lift_required_mm": 0,
+      "requires_thermal_or_elastic_adaptation": false
+    },
+    {
+      "thickness_mm": 0.145,
+      "rigid_interference_mm3": 0.22726897102271854,
+      "extra_lip_lift_required_mm": 0.014999999999999986,
+      "requires_thermal_or_elastic_adaptation": true
+    },
+    {
+      "thickness_mm": 0.16,
+      "rigid_interference_mm3": 0.454542386020873,
+      "extra_lip_lift_required_mm": 0.03,
+      "requires_thermal_or_elastic_adaptation": true
+    }
+  ],
+  "lower_slide_thickness_checks": [
+    {
+      "thickness_mm": 0.8,
+      "no_escape": true
+    },
+    {
+      "thickness_mm": 1.0,
+      "no_escape": true
+    }
+  ],
+  "final_artifact_audit": {
+    "sha256": "d1493c0b0a8a9018b12c09cdbba9dfb05571bddce3e70e8626aeac5acc8a9dd5",
+    "actual_native_slicer_run_verified": false,
+    "liquid_verification_applies_to_previous_channel": true,
+    "current_revision": "atualizacao_canal_perfil.json"
+  },
+  "geometry_changed_after_verification": true
+}

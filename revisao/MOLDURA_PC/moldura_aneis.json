@@ -1,0 +1,35 @@
+{
+  "design": "low cradle and two horizontal end C-clips with dry skirt seats",
+  "material": "PLA",
+  "nominal_stack_mm": {
+    "slide": 0.9,
+    "TPU": 0.4,
+    "cover": 0.13
+  },
+  "hardware": "none",
+  "under_slide_thickness_mm": 0.8,
+  "previous_under_slide_thickness_mm": 3.2,
+  "base_bottom_z_mm": -1.7,
+  "clip_top_z_mm": 1.6,
+  "upper_well_rings": false,
+  "vertical_pins": false,
+  "clip_insertion": "horizontally from the two short slide ends",
+  "lower_hooks_flush_with_base": true,
+  "hook_thickness_mm": 0.32,
+  "hook_slot_height_mm": 0.4,
+  "nominal_snap_deflection_mm": 0.08,
+  "skirt_ring_inner_radius_mm": 4.8,
+  "coverslip_contact_pad_z_mm": 0.5,
+  "physical_validation": false,
+  "microscope_lens_clearance_verified": false,
+  "collision_mm3": {
+    "base_TPU": 0.0,
+    "clip_TPU": 1.6743941306337337e-07,
+    "base_slide": 3.0531133177191805e-16,
+    "clip_slide": 0.0,
+    "cover_pad_nominal_preload": 0.1175999999999999,
+    "base_clip": 0.0
+  },
+  "assembly": "slide in low cradle; insert left/right clips horizontally; lift release ridge to remove; install cold; no pressure on glass",
+  "limitations": "CAD fit only; low PLA hooks require gentle physical trial; thermal bonding still provides fluid seal"
+}

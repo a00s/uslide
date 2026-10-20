@@ -1,0 +1,11 @@
+{
+  "channel_nominal_width_mm": 5.0,
+  "inner_bend_radius_mm": 3.5,
+  "outer_bend_radius_mm": 8.5,
+  "straight_channel_center_y_mm": -6.8,
+  "well_interfaces_preserved_above_y_mm": 1.0,
+  "manual_supports_preserved": false,
+  "liquid_containment_recomputed": false,
+  "table_supports": 2,
+  "shoe_revision": "hollow diamond, 0.40-mm insertion slot"
+}

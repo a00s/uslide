@@ -1,0 +1,29 @@
+{
+  "material": "eSUN TPU-LW",
+  "roof_mm": 0.8,
+  "outer_radius_mm": 5.8,
+  "inner_radius_mm": 4.9,
+  "radial_well_clearance_mm": 0.4,
+  "mounted_top_z_mm": 11.6,
+  "landing": "three light pads on TPU well rim; no upper case ring",
+  "vent_width_height_mm": [
+    0.6,
+    0.4
+  ],
+  "internal_baffle": true,
+  "back_case_clearance_notch": false,
+  "lower_front_shoe_relief": true,
+  "retraction_mm": 0,
+  "print_one_at_time": true,
+  "fit": {
+    "esquerda": {
+      "TPU_overlap_mm3": 0.0,
+      "case_overlap_mm3": 0.0
+    },
+    "direita": {
+      "TPU_overlap_mm3": 8.673617379884035e-19,
+      "case_overlap_mm3": 0.0
+    }
+  },
+  "gas_exchange_or_evaporation_validated": false
+}

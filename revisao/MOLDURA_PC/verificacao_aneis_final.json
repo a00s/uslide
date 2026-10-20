@@ -1,0 +1,106 @@
+{
+  "final_sha256": "e37d762b0b9650266d8d94670966383acdb16dd07fbf9194bca5c6f23ec62f46",
+  "objects": 5,
+  "plates": 2,
+  "TPU_and_original_rings_unchanged": true,
+  "PC_parts": "handling base + D-shaped annular retainer",
+  "native_slicing": {
+    "error_string": "Success.",
+    "export_time": 0,
+    "plate_index": 0,
+    "prepare_time": 0,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "id": 1,
+        "sliced_time": 1,
+        "sliced_time_with_cache": 1,
+        "triangle_count": 7680,
+        "warning_message": ""
+      },
+      {
+        "id": 2,
+        "sliced_time": 0,
+        "sliced_time_with_cache": 0,
+        "triangle_count": 2332,
+        "warning_message": ""
+      }
+    ]
+  },
+  "sliced": [
+    {
+      "plate": 1,
+      "material": "TPU",
+      "nozzle_C": 230,
+      "bed_C": 35,
+      "tools": [
+        "T0"
+      ],
+      "extrusion_bounds_mm": [
+        [
+          52.355,
+          97.885,
+          0.2
+        ],
+        [
+          167.645,
+          137.274,
+          10.0
+        ]
+      ],
+      "statistics": [
+        "; total filament used [g] = 1.51",
+        "; estimated printing time (normal mode) = 23m 18s"
+      ]
+    },
+    {
+      "plate": 2,
+      "material": "PC",
+      "nozzle_C": 260,
+      "bed_C": 100,
+      "tools": [
+        "T0"
+      ],
+      "extrusion_bounds_mm": [
+        [
+          67.658,
+          63.186,
+          0.2
+        ],
+        [
+          152.342,
+          164.434,
+          15.08
+        ]
+      ],
+      "statistics": [
+        "; total filament used [g] = 6.17",
+        "; estimated printing time (normal mode) = 54m 25s"
+      ]
+    }
+  ],
+  "nominal_collision_volumes_mm3": {
+    "base_TPU": 0.0,
+    "retainer_TPU": 6.934401087919783e-17,
+    "base_slide": 1.255537694926697e-06,
+    "retainer_cover": 1.99127139429224e-07,
+    "base_retainer": 0.0
+  },
+  "nominal_contact_area_estimates_mm2": {
+    "-1": {
+      "well_rim_mm2": 12.636011062600318,
+      "cover_pad_mm2": 6.9601971053502725
+    },
+    "1": {
+      "well_rim_mm2": 12.636011062585895,
+      "cover_pad_mm2": 6.960197105350293
+    }
+  },
+  "central_objective_region_clear": true,
+  "ring_front_not_beyond_original_well_face": true,
+  "hardware": "2 M3x8 screws and 2 M3 nuts",
+  "physical_print_or_seal_test": false,
+  "microscope_specific_clearance_verified": false,
+  "limitation": "Prototype CAD and slicer verification only; pressure, PC creep, glass strength and actual leakage require physical trial.",
+  "lower_base_mesh_identical_to_previous_version": true
+}

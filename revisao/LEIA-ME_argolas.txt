@@ -1,0 +1,9 @@
+ARGOLAS DE PRESSÃO COM SAPATA LARGA — PROTÓTIPO
+
+Para imprimir as argolas deitadas no Creality Print, abra Argolas_pressao_base_larga_K1C.3mf ou U-Slide_plato_K1C.3mf. No projeto combinado, selecione somente as duas argolas para fatiar. Use PC se a ficha do filamento permitir a temperatura usada no aquecimento; PETG serve para um primeiro teste se não amolecer no processo. Não imprima estas argolas junto com a junta TPU 85A na mesma etapa com a K1C de extrusor único.
+
+Para visualizar as argolas instaladas sobre os reservatórios, abra U-Slide_conjunto_completo_K1C.3mf. Essa é uma posição de montagem; as argolas ficam elevadas e não devem ser impressas nessa posição.
+
+A versão de sapata larga tenta espalhar melhor a pressão ao redor dos reservatórios e reduzir a concentração de carga que inicia o descolamento. É uma hipótese de projeto, não uma garantia de vedação. Teste primeiro o encaixe e vazamento com água colorida, sem células.
+
+A junta TPU original mantém as duas abas laterais sacrificiais para ajudar a removê-la da mesa. Use as abas para iniciar a retirada; corte-as somente depois. Elas não são portas de fluido.

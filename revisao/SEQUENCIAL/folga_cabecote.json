@@ -1,0 +1,40 @@
+{
+  "well_components": [
+    {
+      "bounds": [
+        -37.5,
+        0.824999988079071,
+        0.4001,
+        -25.5,
+        9.824999809265137,
+        10.0
+      ],
+      "volume_mm3": 175.71706766423875
+    },
+    {
+      "bounds": [
+        25.5,
+        0.824999988079071,
+        0.4001,
+        37.5,
+        9.824999809265137,
+        10.0
+      ],
+      "volume_mm3": 175.71706643417744
+    }
+  ],
+  "minimum_xy_clearance_mm": 51.0,
+  "profile_clearance_radius_mm": 65.0,
+  "profile_nozzle_height_mm": 4.0,
+  "well_max_z_mm": 10.0,
+  "native_print_by_object_passes_profile_xy_clearance": false,
+  "required_order": [
+    "common base",
+    "left well complete",
+    "right well complete"
+  ],
+  "final_project_changed": false,
+  "blocked_by": "complete-well sequential order needs a verified toolhead clearance envelope, or a user-approved staged-height order",
+  "conservative_stage_height_candidate_mm": 3.6,
+  "stage_candidate_released": false
+}

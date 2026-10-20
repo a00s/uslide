@@ -1,0 +1,24 @@
+U-SLIDE V2 — VARIANTE DE ENSAIO PARA CREALITY K1C
+
+ARQUIVOS
+- U-Slide_K1C_V2_transicao_coberta.3mf: projeto Creality Print com cinco objetos no prato.
+- U-Slide_TPU85A_V2_transicao_coberta.scad: fonte paramétrica da junta TPU V2.
+- U-Slide_TPU85A_V2_transicao_coberta.stl: malha da junta TPU V2.
+- U-Slide_V2_montagem_preview.png: referência visual da montagem.
+
+O QUE MUDOU
+Esta variante conserva a lâmina de 76,2 × 25,4 mm, o cobrevidro de 60 × 24 mm, as abas para retirar o TPU, o canal em U e os anéis C de pressão. Os colares têm abertura interna de 7,6 mm e diâmetro externo de 8,8 mm; centros em x = ±31 mm. A linha central do canal termina em x = ±25,5 mm. Com largura de 5 mm, a borda do canal alcança ±28 mm, deixando uma faixa de vedação nominal de 2 mm sob cada ponta do cobrevidro centralizado (±30 mm). As duas barras compridas separadas no prato são clipes de PC para encaixar nas bordas longas externas após a montagem; não vedam o canal. As hastes finas ligadas à junta TPU são abas para descolar a impressão.
+
+IMPRESSÃO
+Se o Creality Print avisar que o projeto é externo, selecione “Creality K1C 0.4 nozzle” e confirme. O processo ativo é “0.08mm Standard @Creality K1C 0.4 nozzle” (camada inicial de 0,20 mm) e o perfil de filamento padrão é “TPU 85A saraya profile oficial”. A K1C tem um extrusor; imprima em duas etapas:
+1. Mantenha a junta e as duas argolas TPU; remova temporariamente os dois trilhos PC e fatie com o perfil Saraya.
+2. Reabra este 3MF original, mantenha apenas os dois trilhos e remova temporariamente junta e argolas. Selecione PC CC3D generic e confira as temperaturas do seu preset calibrado antes de fatiar.
+Não salve as remoções sobre o arquivo original.
+
+MONTAGEM
+1. Posicione a junta TPU na lâmina, com o canal voltado para o cobrevidro. Use as abas para soltar a impressão e remova-as apenas depois de retirar a peça da mesa.
+2. Vire cada anel TPU sobre o colar correspondente, com a face lisa para fora e a face impressa em contato com o TPU. A abertura do C aponta para dentro, na direção do canal. Use o processo de aquecimento que você já calibrou para fundir a união.
+3. Após esfriar, encaixe os trilhos PC nas bordas longas externas da lâmina para reter o conjunto. O vão nominal é 1,50 mm, perto da pilha estimada de 0,9 mm de lâmina + 0,4 mm de TPU + 0,17 mm de cobrevidro. A lâmina pode variar de 0,8 a 1,0 mm e a espessura real do vidro pode ser diferente; teste a seco e não force o vidro.
+
+LIMITES DO ENSAIO
+A faixa de vedação de 2 mm é baseada nas dimensões CAD e pressupõe cobrevidro centralizado; tolerâncias de impressão, posição e dimensões reais podem reduzi-la. A variante recua as extremidades do canal e move os reservatórios para dentro. Teste encaixe, foco e vazamento com água colorida antes de usar células. Este protótipo não está validado para cultura celular, esterilização ou biocompatibilidade.

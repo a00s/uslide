@@ -1,0 +1,28 @@
+U-SLIDE — PROTÓTIPO PARA CREALITY K1C
+
+ARQUIVO
+Abra U-Slide_K1C_FINAL.3mf no Creality Print. O arquivo é um projeto nativo com o preset Creality K1C 0.4 nozzle e o perfil “TPU 85A saraya profile oficial” definidos como padrão. Ele reúne cinco objetos separados no mesmo prato: a junta principal e duas argolas em TPU 85A, mais dois trilhos de retenção em PC. A área ocupada é aproximadamente 115,8 × 89,6 mm e a altura máxima é 10 mm.
+
+Ao abrir, o Creality Print pode mostrar um aviso dizendo que o projeto não foi criado nele. Escolha “Creality K1C 0.4 nozzle” e confirme. Isso é esperado. O projeto foi conferido no Creality Print 7.3: a importação reconheceu cinco objetos em um prato e encontrou o perfil “TPU 85A saraya profile oficial”. Confira no topo que a impressora e o filamento estão corretos antes de fatiar.
+
+A K1C tem um extrusor. Imprima em duas etapas:
+1. Na lista de objetos, mantenha a junta e as duas argolas; remova temporariamente os dois trilhos do prato. Confira que “TPU 85A saraya profile oficial” segue ativo e só então fatie.
+2. Para a segunda etapa, reabra o arquivo final original. Mantenha os dois trilhos e remova temporariamente a junta e as argolas. No seletor de filamento, escolha “PC CC3D generic” e só então fatie para PC. Esse preset local herda os parâmetros do “Generic PC @Creality K1C 0.4 nozzle”; não traz temperaturas próprias. No preset herdado aparecem 260 °C no bico e 100 °C na mesa. Confira os valores contra os que você já calibrou para o seu carretel antes de imprimir; o arquivo final abre com o preset TPU e não troca automaticamente para PC.
+Não salve essas remoções por cima do arquivo final. Confira a prévia do fatiador e se os perfis correspondem aos carretéis instalados; mantenha as temperaturas que você já calibrou.
+
+MONTAGEM PROPOSTA
+1. Retire o TPU da mesa pelas anteninhas/abas laterais. Corte as abas sacrificiais após soltar a peça; elas ajudam na remoção, não são portas de fluido. A junta principal fica entre a lâmina de microscópio e o cobrevidro.
+2. Vire as duas argolas de TPU de cabeça para baixo sobre os reservatórios. A face lisa que tocou a mesa fica para fora/para cima; a face de camadas encosta no TPU ao redor dos reservatórios. Aqueça usando o processo que você já ajustou para fundir/reforçar as superfícies.
+3. Deixe o conjunto esfriar. Vire os trilhos de PC da orientação de impressão e encaixe um em cada borda longa externa da lâmina. As abas seguram cerca de 0,8 mm da borda do cobrevidro e deixam a área central de observação aberta. Não há barras nas pontas para manter os reservatórios livres.
+4. Faça primeiro o encaixe a seco. O vão nominal dos trilhos é 1,65 mm, escolhido como compromisso para lâminas entre 0,8 e 1,0 mm, TPU e cobrevidro fino. A compressão real depende da espessura do TPU depois do aquecimento e da espessura do vidro. Se ficar frouxo ou exigir força excessiva, não force o vidro: ajuste o vão antes de imprimir novamente.
+
+PONTO DE VEDAÇÃO A REVISAR
+O modelo atual leva a boca do canal até aproximadamente a borda do cobrevidro de 60 mm. Como o canal tem cerca de 5 mm de largura, parte da transição pode ficar sem cobertura superior. Os anéis invertidos reforçam os colares, mas não garantem a vedação dessa ponte. A opção geométrica para a próxima revisão é deslocar os reservatórios cerca de 3 mm para dentro e terminar o canal cerca de 3 mm antes da borda do cobrevidro, mantendo a comunicação com cada poço. O esquema comparativo está em vedacao_borda_cobrevidro.png. Essa alternativa encurta o trecho reto do canal em cerca de 6 mm e ainda precisa ser validada no encaixe real; não faz parte deste 3MF.
+
+MATERIAIS
+- TPU 85A no corpo e nas argolas, para permitir reforço pelo processo térmico que você está otimizando.
+- PC nos trilhos, instalados somente depois do aquecimento e resfriamento. Confirme que a ficha do seu PC permite o processo térmico usado. PLA pode perder rigidez com o calor; PETG só deve ser usado se suportar a temperatura do processo.
+- A ficha da Siraya Tech Flex TPU 85A informa Vicat de 76 °C e ponto de fusão de 200 °C. Esses valores são referência, não parâmetros de aquecimento. Fonte: https://siraya.tech/pages/siraya-tech-fibreheart-flex-tpu-85a-tds
+
+VALIDAÇÃO
+É um protótipo geométrico, não uma garantia de vedação ou compatibilidade biológica. Antes de usar células, faça o encaixe sem aquecer, confira o foco no microscópio e teste vazamento com água colorida. A alegação de biocompatibilidade do filamento não valida a peça impressa, o processo térmico ou a esterilidade do conjunto.

@@ -1,0 +1,109 @@
+{
+  "sha256": "63d63bff936cb22ac3349ed8c397a8e29863c63fe6e9158c55d3dba807d10c9f",
+  "objects": 5,
+  "TPU_and_rings_preserved": true,
+  "hardware": "none",
+  "design": {
+    "design": "PC cradle + upper annuli and two integral split push-in pins",
+    "nominal_stack_mm": {
+      "slide": 0.9,
+      "TPU": 0.4,
+      "cover": 0.13
+    },
+    "hardware": "none",
+    "base_changes": "cradle preserved; rear M3/nut holes replaced by round pin sockets",
+    "pin_centers_mm": [
+      [
+        -33.0,
+        17.0
+      ],
+      [
+        33.0,
+        17.0
+      ]
+    ],
+    "pin_stem_diameter_mm": 4.8,
+    "hole_diameter_mm": 5.0,
+    "retaining_bead_diameter_mm": 5.2,
+    "pin_internal_diameter_mm": 3.2,
+    "pin_split_width_mm": 1.8,
+    "radial_retention_mm": 0.1,
+    "pin_tip_z_mm": -3.9,
+    "base_bottom_z_mm": -4.1,
+    "underside_relief_diameter_mm": 5.6,
+    "retention_shoulder_z_mm": -3.05,
+    "guide_side_clearance_mm": 0.25,
+    "guide_bottom_clearance_mm": 0.4,
+    "ring_contact_height_mm": 10.0,
+    "free_cover_pad_height_mm": 0.4,
+    "expected_cover_flexure_opening_mm": [
+      0.03,
+      0.23
+    ],
+    "force_adjustable": false,
+    "physical_validation": false,
+    "assembly": "install cold; align U guides; push upper rear pads until pins seat. Do not press glass.",
+    "limitations": "nominal geometric fit, not validated FFF snap strength, retention force, creep or seal",
+    "collision_mm3": {
+      "base_TPU": 0.0,
+      "retainer_TPU": -9.29614770311752e-17,
+      "base_slide": 3.5648567431323386e-15,
+      "retainer_cover_preload": 0.6083999999999986,
+      "base_retainer": 3.554150246679044e-18
+    }
+  },
+  "native_slicing": {
+    "error_string": "Success.",
+    "export_time": 0,
+    "plate_index": 0,
+    "prepare_time": 0,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "id": 1,
+        "sliced_time": 1,
+        "sliced_time_with_cache": 0,
+        "triangle_count": 7680,
+        "warning_message": ""
+      },
+      {
+        "id": 2,
+        "sliced_time": 0,
+        "sliced_time_with_cache": 0,
+        "triangle_count": 4058,
+        "warning_message": ""
+      }
+    ]
+  },
+  "physical_retention_or_seal_verified": false,
+  "plate_1": {
+    "statistics": [
+      "; total filament used [g] = 1.51",
+      "; estimated printing time (normal mode) = 23m 18s"
+    ],
+    "physical_tools": [
+      "T0"
+    ]
+  },
+  "plate_2": {
+    "statistics": [
+      "; total filament used [g] = 5.96",
+      "; estimated printing time (normal mode) = 53m 45s"
+    ],
+    "physical_tools": [
+      "T0"
+    ]
+  },
+  "previous_slicing_sha256": "34661b74433c7195a1ce439e10a5ca3c2203cd9dadd335ce666f1afc937b6261",
+  "settings_update": {
+    "TPU_nozzle_C": 240,
+    "TPU_initial_nozzle_C": 240,
+    "layer_mm": 0.08,
+    "first_layer_mm": 0.2,
+    "profile": "0.08mm Standard @Creality K1C 0.4 nozzle",
+    "resliced_after_settings_change": false
+  },
+  "native_slicing_applies_to_previous_settings": true,
+  "subsequent_revision": "../SELAGEM/atualizacao_canal_perfil.json",
+  "current_artifact_differs_from_this_slicing": true
+}

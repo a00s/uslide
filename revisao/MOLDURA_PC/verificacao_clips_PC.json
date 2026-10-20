@@ -1,0 +1,233 @@
+{
+  "clip_count": 2,
+  "same_geometry_both_clips": true,
+  "print_orientation": "C profile laid flat, 2.4 mm print height",
+  "print_supports": false,
+  "optical_window_x_mm": [
+    -25.2,
+    25.2
+  ],
+  "fits": [
+    {
+      "slide_thickness_mm": 0.8,
+      "side": "esquerdo",
+      "TPU_overlap_mm3": 0,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 8.333867464857907e-06,
+      "lower_contact_gap_mm": 2.9310315837811192e-05,
+      "bounds_mm": [
+        [
+          -27.600000381469727,
+          -13.292612075805664,
+          -3.1389667987823486
+        ],
+        [
+          -25.19999885559082,
+          14.31013298034668,
+          8.78933334350586
+        ]
+      ]
+    },
+    {
+      "slide_thickness_mm": 0.8,
+      "side": "direito",
+      "TPU_overlap_mm3": 0,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 8.333867464857907e-06,
+      "lower_contact_gap_mm": 2.9310315837811192e-05,
+      "bounds_mm": [
+        [
+          25.19999885559082,
+          -13.292612075805664,
+          -3.1389667987823486
+        ],
+        [
+          27.600000381469727,
+          14.31013298034668,
+          8.78933334350586
+        ]
+      ]
+    },
+    {
+      "slide_thickness_mm": 0.9,
+      "side": "esquerdo",
+      "TPU_overlap_mm3": 0,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 2.8645117749137197e-05,
+      "lower_contact_gap_mm": 3.085507804081572e-05,
+      "bounds_mm": [
+        [
+          -27.600000381469727,
+          -13.277836799621582,
+          -3.3169004917144775
+        ],
+        [
+          -25.19999885559082,
+          14.330398559570312,
+          8.78933334350586
+        ]
+      ]
+    },
+    {
+      "slide_thickness_mm": 0.9,
+      "side": "direito",
+      "TPU_overlap_mm3": 0,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 2.8645117749137197e-05,
+      "lower_contact_gap_mm": 3.085507804081572e-05,
+      "bounds_mm": [
+        [
+          25.19999885559082,
+          -13.277836799621582,
+          -3.3169004917144775
+        ],
+        [
+          27.600000381469727,
+          14.330398559570312,
+          8.78933334350586
+        ]
+      ]
+    },
+    {
+      "slide_thickness_mm": 1.0,
+      "side": "esquerdo",
+      "TPU_overlap_mm3": 2.4061037516661214e-10,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 3.5929721564935927e-06,
+      "lower_contact_gap_mm": 1.725305140198823e-05,
+      "bounds_mm": [
+        [
+          -27.600000381469727,
+          -13.2630615234375,
+          -3.4948339462280273
+        ],
+        [
+          -25.19999885559082,
+          14.350664138793945,
+          8.789529800415039
+        ]
+      ]
+    },
+    {
+      "slide_thickness_mm": 1.0,
+      "side": "direito",
+      "TPU_overlap_mm3": 2.406103671706211e-10,
+      "bottom_glass_overlap_mm3": 0,
+      "coverslip_overlap_mm3": 0,
+      "liquid_overlap_mm3": 0,
+      "upper_contact_gap_mm": 3.5929721564935927e-06,
+      "lower_contact_gap_mm": 1.725305140198823e-05,
+      "bounds_mm": [
+        [
+          25.19999885559082,
+          -13.2630615234375,
+          -3.4948339462280273
+        ],
+        [
+          27.600000381469727,
+          14.350664138793945,
+          8.789529800415039
+        ]
+      ]
+    }
+  ],
+  "linear_PC_estimate": {
+    "method": "Linear small-deflection Euler-Bernoulli 2D frame; stiffness is an estimate, not a measured print force or validated contact FEA.",
+    "assumed_PC_E_MPa": 2000.0,
+    "print_orientation": "C profile flat in the print XY plane, flexion within layer plane; extrusion 2.4 mm",
+    "results": [
+      {
+        "slide_thickness_mm": 0.8,
+        "required_jaw_opening_mm": 0.05,
+        "estimated_downward_force_per_clip_N": 0.03452119148641941,
+        "estimated_two_clips_force_N": 0.06904238297283882,
+        "max_bending_strain": 0.0005646776929233431,
+        "force_balance_error_N": 2.7284841053187847e-10,
+        "reference_horizontal_reaction_N": -2.6618707238412753e-12,
+        "reference_moment_Nmm": 2.4040218704612926e-09
+      },
+      {
+        "slide_thickness_mm": 0.9,
+        "required_jaw_opening_mm": 0.15,
+        "estimated_downward_force_per_clip_N": 0.10356357403725269,
+        "estimated_two_clips_force_N": 0.20712714807450539,
+        "max_bending_strain": 0.00169403307154492,
+        "force_balance_error_N": 2.091837814077735e-10,
+        "reference_horizontal_reaction_N": -8.474998480778595e-12,
+        "reference_moment_Nmm": -3.0050841814954765e-09
+      },
+      {
+        "slide_thickness_mm": 1.0,
+        "required_jaw_opening_mm": 0.25,
+        "estimated_downward_force_per_clip_N": 0.17260595658808597,
+        "estimated_two_clips_force_N": 0.34521191317617195,
+        "max_bending_strain": 0.0028233884501685505,
+        "force_balance_error_N": 7.60337570682168e-10,
+        "reference_horizontal_reaction_N": -1.425703999302641e-11,
+        "reference_moment_Nmm": -8.411859653278952e-09
+      }
+    ]
+  },
+  "TPU_and_original_rings_mesh_preserved": true,
+  "slice_validation": [
+    {
+      "plate": 1,
+      "filament": "TPU",
+      "used_filament_g": 1.51,
+      "layers": 99,
+      "extrusion_bounds_mm": [
+        [
+          52.355,
+          97.885,
+          0.2
+        ],
+        [
+          167.645,
+          137.382,
+          10.0
+        ]
+      ],
+      "support_toolpaths": false,
+      "physical_tools": [
+        "T0"
+      ],
+      "gcode_sha256": "f8a9049acc0b597283446f2299ecb7e5615a347194be603e7ec0f27d522bf9ca"
+    },
+    {
+      "plate": 2,
+      "filament": "PC",
+      "used_filament_g": 0.53,
+      "layers": 12,
+      "extrusion_bounds_mm": [
+        [
+          65.316,
+          104.272,
+          0.2
+        ],
+        [
+          148.143,
+          121.339,
+          2.4
+        ]
+      ],
+      "support_toolpaths": false,
+      "physical_tools": [
+        "T0"
+      ],
+      "gcode_sha256": "db00ace348315a45ad1d45d89f61c1a93bd633aa80ee0656eda7ec10e9579909"
+    }
+  ],
+  "native_project_sha256": "3065776d195f1721e904314556ed8a10c63bec15c4b0a2d3a9b99092523e6d05",
+  "physical_print_or_clamp_test_completed": false,
+  "notes": "Linear elastic/contact geometry estimate only. No measured PC stiffness, creep, thermal bond or glass strength test. CLI logs toolpath outside during multi-plate pre-export validation; all emitted extrusion endpoints audited inside the 220x220 mm bed."
+}

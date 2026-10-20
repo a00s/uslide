@@ -1,0 +1,24 @@
+{
+  "sha256": "d1493c0b0a8a9018b12c09cdbba9dfb05571bddce3e70e8626aeac5acc8a9dd5",
+  "channel": {
+    "channel_nominal_width_mm": 5.0,
+    "inner_bend_radius_mm": 3.5,
+    "outer_bend_radius_mm": 8.5,
+    "straight_channel_center_y_mm": -6.8,
+    "well_interfaces_preserved_above_y_mm": 1.0,
+    "manual_supports_preserved": 6,
+    "liquid_containment_recomputed": false
+  },
+  "TPU_nozzle_C": "240",
+  "TPU_first_nozzle_C": "240",
+  "layer_mm": "0.08",
+  "first_layer_mm": "0.2",
+  "initial_layer_wall_speed_mm_s": "15",
+  "initial_layer_infill_speed_mm_s": "15",
+  "TPU_aux_fan_percent": "0",
+  "TPU_fan_off_first_layers": "3",
+  "print_sequence": "by layer",
+  "resliced_after_changes": false,
+  "liquid_simulation_applies_to_previous_channel": true,
+  "geometry_scope": "TPU lower channel corners rounded; wells and PC retainer kept"
+}

@@ -1,0 +1,29 @@
+{
+  "source": "/home/x/Downloads/case/case.3mf",
+  "source_units": "meter, converted to mm and oriented with Z thickness",
+  "outer_mm": [
+    81,
+    30,
+    1.7
+  ],
+  "floor_thickness_mm": 0.3,
+  "original_slide_seat_mm": [
+    76,
+    25.5
+  ],
+  "slide_mm": [
+    76.2,
+    25.4
+  ],
+  "original_length_shortfall_mm": 0.2,
+  "revised_slide_seat_mm": [
+    76.5,
+    25.7
+  ],
+  "clearance_total_mm": [
+    0.3,
+    0.3
+  ],
+  "four_clip_holes_closed": true,
+  "source_file_preserved": true
+}

@@ -1,0 +1,40 @@
+{
+  "status": "estudo dimensional; nao liberar para impressao antes de confirmar objetiva e recalcular flexao",
+  "one_connected_component": true,
+  "watertight": true,
+  "assembled_bounds_mm": [
+    [
+      -27.600000381469727,
+      -13.277836799621582,
+      -3.3169004917144775
+    ],
+    [
+      27.600000381469727,
+      14.330398559570312,
+      8.78933334350586
+    ]
+  ],
+  "nominal_stack_mm": {
+    "slide": 0.9,
+    "TPU": 0.4,
+    "cover": 0.13
+  },
+  "cover_contact_centers_mm": [
+    [
+      -26.4,
+      9.8,
+      0.53
+    ],
+    [
+      26.4,
+      9.8,
+      0.53
+    ]
+  ],
+  "TPU_below_cover_checked_by_vertical_rays": true,
+  "rear_rail_y_min_mm": 12.9,
+  "central_x_window_mm": 50.4,
+  "objective_diameter_mm": null,
+  "force_model_for_new_leaves": "pending",
+  "final_3mf_replaced": false
+}

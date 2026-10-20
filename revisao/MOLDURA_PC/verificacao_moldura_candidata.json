@@ -1,0 +1,61 @@
+{
+  "candidate_sha256": "92ca9b4230d45df0f8432486fadd0c112bb3c8debd303abf877b0f355d4f56ec",
+  "final_not_replaced": true,
+  "TPU_and_rings_meshes_unchanged": true,
+  "native_slice_result": {
+    "error_string": "Success.",
+    "export_time": 0,
+    "plate_index": 2,
+    "prepare_time": 1,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "id": 2,
+        "sliced_time": 0,
+        "sliced_time_with_cache": 0,
+        "triangle_count": 3036,
+        "warning_message": ""
+      }
+    ]
+  },
+  "physical_tools": [
+    "T0"
+  ],
+  "extrusion_bounds_mm": [
+    [
+      79.111,
+      94.163,
+      0.2
+    ],
+    [
+      140.89,
+      126.837,
+      11.84
+    ]
+  ],
+  "extruded_filament_mm_by_feature": {
+    "Custom": 0.8,
+    "Support": 201.3759300000022,
+    "Brim": 21.65156000000001,
+    "Outer wall": 266.62740000000343,
+    "Inner wall": 148.90099999999836,
+    "Overhang wall": 12.548769999999998,
+    "Top surface": 11.259799999999991
+  },
+  "support_filament_fraction": 0.3036591104414748,
+  "gcode_statistics": [
+    "; total filament used [g] = 0.83",
+    "; estimated printing time (normal mode) = 13m 43s"
+  ],
+  "unsupported_claims": [
+    "Microscope fit is unverified: objective diameter and available stage clearance missing.",
+    "PC spring forces are linear estimates, not measurements.",
+    "Whole-frame nonlinear contact and long-term PC creep not modeled.",
+    "No physical print or assembly test performed."
+  ],
+  "remaining_required_before_final": [
+    "objective and stage clearance confirmation",
+    "refine nominal contact clearances and root transition",
+    "verify new pressure leaves in layer preview"
+  ]
+}

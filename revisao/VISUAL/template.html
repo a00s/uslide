@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>U-Slide — inspeção 3D</title>
+<style>body{margin:0;background:#20262d;color:#eff4f6;font:15px system-ui}header{padding:14px 20px;background:#29323c;display:flex;gap:16px;align-items:center;flex-wrap:wrap}h1{font-size:18px;margin:0}button,select{font:inherit;padding:7px 10px;background:#394653;color:white;border:1px solid #758493;border-radius:5px;cursor:pointer}label{display:flex;gap:7px;align-items:center}#view{height:calc(100vh - 140px);min-height:450px}footer{padding:9px 20px;color:#bdccd5}#info{color:#92dbd0;font-size:13px}</style>
+<header><h1>U-Slide · inspeção da malha real</h1><select id="version" aria-label="Modelo"><option value="final">Versão final atual</option><option value="original">Original de referência</option></select><select id="region" aria-label="Região"><option value="well">Detalhe do depósito esquerdo</option><option value="all">Peça inteira</option></select><button id="iso">Perspectiva</button><button id="top">Por cima</button><button id="bottom">Por baixo</button><button id="front">De frente</button><label><input id="cut" type="checkbox">Corte longitudinal</label><label><input id="wire" type="checkbox">Arestas da malha</label><span id="info"></span></header>
+<div id="view" role="img" aria-label="Modelo 3D interativo real do corpo U-Slide. Arraste para girar e use a roda para aproximar."></div><footer>Arraste para girar · roda para aproximar · botão direito para deslocar. Dimensões em mm. A visualização reproduz a malha do 3MF; não representa uma validação da vedação.</footer>
+<script>/*THREE*/</script><script>/*ORBIT*/</script>
+<script>
+const data=/*MODEL*/;
+const view=document.getElementById('view'),scene=new THREE.Scene();scene.background=new THREE.Color('#20262d');
+const camera=new THREE.PerspectiveCamera(35,1,.01,2000),renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.localClippingEnabled=true;view.appendChild(renderer.domElement);
+const orbit=new THREE.OrbitControls(camera,renderer.domElement);orbit.enableDamping=true;
+scene.add(new THREE.HemisphereLight(0xffffff,0x48525d,1.0));const light=new THREE.DirectionalLight(0xffffff,.9);light.position.set(-30,-30,60);scene.add(light);
+function makeGeometry(points,indices){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(points.flat(),3));if(indices)g.setIndex(indices.flat());const flat=g.index?g.toNonIndexed():g;flat.computeVertexNormals();return flat;}
+const material=new THREE.MeshStandardMaterial({color:0x52b9aa,roughness:.72,metalness:0,side:THREE.DoubleSide});
+const finalMesh=new THREE.Mesh(makeGeometry(data.vertices,data.faces),material),originalMesh=new THREE.Mesh(makeGeometry(data.original,null),material);scene.add(finalMesh,originalMesh);
+const meshes=[finalMesh,originalMesh];let target=new THREE.Vector3(-32,5.325,4.5),distance=34;
+const grid=new THREE.GridHelper(120,120,0x5c6b77,0x35414b);grid.rotation.x=Math.PI/2;grid.position.z=-.04;scene.add(grid);
+function selection(){const detail=document.getElementById('region').value==='well',original=document.getElementById('version').value==='original';finalMesh.visible=!original;originalMesh.visible=original;
+ material.wireframe=document.getElementById('wire').checked;let planes=[];if(detail){planes.push(new THREE.Plane(new THREE.Vector3(1,0,0),40),new THREE.Plane(new THREE.Vector3(-1,0,0),-24));}if(document.getElementById('cut').checked)planes.push(new THREE.Plane(new THREE.Vector3(0,1,0),-5.325));material.clippingPlanes=planes;material.clipShadows=true;material.needsUpdate=true;
+ target=detail?new THREE.Vector3(-32,5.325,4.5):new THREE.Vector3(0,0,4);distance=detail?34:160;
+ document.getElementById('info').textContent=original?'Original de referência':data.vertices.length+' vértices · '+data.faces.length+' triângulos';}
+function setView(direction){orbit.target.copy(target);camera.up.set(0,0,1);let dir={iso:[.8,-1,.85],top:[0,0,1],bottom:[0,0,-1],front:[1,0,.08]}[direction];if(direction==='top')camera.up.set(0,1,0);if(direction==='bottom')camera.up.set(0,-1,0);camera.position.copy(target).add(new THREE.Vector3(...dir).normalize().multiplyScalar(distance));camera.lookAt(target);orbit.update();}
+for(const id of ['version','region'])document.getElementById(id).onchange=()=>{selection();setView('iso');};for(const id of ['cut','wire'])document.getElementById(id).onchange=selection;for(const id of ['iso','top','bottom','front'])document.getElementById(id).onclick=()=>setView(id);
+function resize(){renderer.setSize(view.clientWidth,view.clientHeight);camera.aspect=view.clientWidth/view.clientHeight;camera.updateProjectionMatrix();}window.addEventListener('resize',resize);resize();selection();setView('iso');function frame(){requestAnimationFrame(frame);orbit.update();renderer.render(scene,camera);}frame();
+</script></html>

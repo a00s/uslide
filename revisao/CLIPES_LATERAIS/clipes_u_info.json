@@ -1,0 +1,30 @@
+{
+  "design": "two broad clamps with closed external rear wall and upper well contour; no raised ring",
+  "nominal_stack_mm": [
+    1.43,
+    1.46
+  ],
+  "minimum_jaw_gap_mm": 1.42,
+  "preload_mm": [
+    0.01,
+    0.04
+  ],
+  "under_slide_mm": 0.64,
+  "slide_width_mm": 25.4,
+  "total_width_mm": 26.2,
+  "upper_plate_thickness_mm": 1.6,
+  "back_wall_mm": 1.6,
+  "external_wall_y_mm": [
+    12.7,
+    13.5
+  ],
+  "mounted_max_z_mm": 2.12,
+  "raised_ring": false,
+  "external_tip_x_abs_mm": 40.1,
+  "assembled_length_mm": 80.2,
+  "handle_beyond_wall_mm": 0,
+  "outer_corner_bevel_mm": 0,
+  "assembly": "Cold assembly; remove antennas. Insert from short end, no forcing glass. Rear wall stays outside slide edge.",
+  "print": "rear external wall on bed, no supports, no brim",
+  "physical_fit_validated": false
+}

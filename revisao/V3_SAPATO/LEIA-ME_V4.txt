@@ -1,0 +1,10 @@
+V4 — prolongamento oco tipo sapato
+
+- U-Slide_TPU85A_V4_sapato_oco.scad: fonte paramétrica. `show_original=true` produz o corpo e os sapatos; `-D show_original=false` exporta só os sapatos para inspeção.
+- U-Slide_TPU85A_V4_sapato_oco.stl: corpo TPU + sapatos, malha final usada no projeto Creality.
+- U-Slide_TPU85A_V4_sapato_only.stl: sapatos isolados para inspeção.
+- U-Slide_V4_sapato_secao.png: cortes horizontais mostrando a passagem oca.
+- U-Slide_V4_juncao_fechada.png: cortes da junção fechada e da parede fina.
+- integra_v4_no_projeto.py: substitui a malha principal do 3MF de destino sem mexer nas argolas.
+
+O túnel tem a parte inferior aberta para o coverslip deslizar sob o teto; a pequena travessa transversal dentro do bico é para cortar antes da montagem. A junção agora fecha o portal vertical do colar com um setor curvo de 0,60 mm, mesma espessura radial da parede do depósito. Uma parede de fechamento de 0,60 mm separa o túnel do interior do depósito. As paredes começam acima da base de 0,40 mm para preservar o caminho de fluido nessa camada inferior. Espessura do coverslip assumida: 0,17 mm; abertura modelada: 0,29 mm.

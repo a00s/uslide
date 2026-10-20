@@ -1,0 +1,51 @@
+{
+  "clip_source": "CLIPES_LATERAIS (current square flush exterior)",
+  "sides": {
+    "esquerda": {
+      "watertight": true,
+      "TPU_intersection_mm3": 0.0,
+      "clips_intersection_mm3": 0.0,
+      "vertical_clearance_to_clips_mm": 7.180000305175781,
+      "mounted_z_mm": [
+        9.300000190734863,
+        11.600000381469727
+      ],
+      "native_3mf_geometry_matches_STL": true,
+      "native_3mf_max_vertex_deviation_mm": 3.3535411120933327e-07
+    },
+    "direita": {
+      "watertight": true,
+      "TPU_intersection_mm3": 8.673617379884035e-19,
+      "clips_intersection_mm3": 0.0,
+      "vertical_clearance_to_clips_mm": 7.180000305175781,
+      "mounted_z_mm": [
+        9.300000190734863,
+        11.600000381469727
+      ],
+      "native_3mf_geometry_matches_STL": true,
+      "native_3mf_max_vertex_deviation_mm": 3.3535411120933327e-07
+    }
+  },
+  "profile": {
+    "nozzle_temperature": [
+      "240",
+      "220",
+      "250"
+    ],
+    "hot_plate_temp": [
+      "35",
+      "50",
+      "45"
+    ],
+    "filament_flow_ratio": [
+      "1",
+      "0.98",
+      "0.7"
+    ],
+    "filament_retraction_length": [
+      "0.4",
+      "1",
+      "0"
+    ]
+  }
+}

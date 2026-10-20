@@ -1,0 +1,6 @@
+DESIGN SUBSTITUIDO: NAO HA MAIS BASE OU MOLDURA PLA NO PROJETO FINAL.
+Prato 02: apenas dois clipes U diretos no sanduiche de vidro/TPU.
+Geracao atual: ../CLIPES_U/gera_clipes_u.py e empacota_clipes_u.py.
+Visual: ../CLIPES_U/clipes_u_preview.png.
+Arquivos antigos desta pasta sao historicos; as entradas gera_moldura_aneis.py
+e empacota_aneis.py encaminham para os novos clipes U.

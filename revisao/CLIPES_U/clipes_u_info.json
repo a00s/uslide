@@ -1,0 +1,47 @@
+{
+  "design": "two identical closed-mouth U clips on rear long edge of sandwich; no PLA base",
+  "material": "PLA",
+  "nominal_slide_mm": 0.9,
+  "TPU_mm": 0.4,
+  "coverslip_mm": [
+    0.13,
+    0.16
+  ],
+  "nominal_stack_mm": [
+    1.43,
+    1.46
+  ],
+  "unloaded_min_jaw_gap_mm": 1.36,
+  "nominal_interference_mm": [
+    0.07,
+    0.1
+  ],
+  "clip_width_mm": 5,
+  "lower_jaw_mm": 0.48,
+  "upper_jaw_mm": 0.48,
+  "mounted_under_slide_mm": 0.48,
+  "contact_centers_x_mm": [
+    -27,
+    27
+  ],
+  "slide_rear_edge_y_mm": 12.7,
+  "inner_root_y_mm": 13.15,
+  "mount": "slide clips onto the rear long edge; one near each coverslip end; do not grip reservoirs",
+  "print": "on side, U profile on bed, no supports or brim",
+  "source_case_reference": "../CASE_REFERENCIA/medidas_case.json",
+  "case_reference_used_as_base": false,
+  "fit": {
+    "esquerdo": {
+      "TPU_intersection_mm3": 0.0,
+      "slide_intersection_mm3": 1.561658121817138e-08,
+      "cover_preload_overlap_mm3": 0.4190365892318855
+    },
+    "direito": {
+      "TPU_intersection_mm3": 0.0,
+      "slide_intersection_mm3": 1.5616581141881244e-08,
+      "cover_preload_overlap_mm3": 0.4190365892318856
+    }
+  },
+  "physical_preload_or_microscope_clearance_validated": false,
+  "limitations": "nominal dimensions only; unmeasured slide thickness changes clamping; do not force coverslip"
+}

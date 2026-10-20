@@ -1,0 +1,37 @@
+{
+  "method": "Linear small-deflection Euler-Bernoulli 2D frame; stiffness is an estimate, not a measured print force or validated contact FEA.",
+  "assumed_PC_E_MPa": 2000.0,
+  "print_orientation": "C profile flat in the print XY plane, flexion within layer plane; extrusion 2.4 mm",
+  "results": [
+    {
+      "slide_thickness_mm": 0.8,
+      "required_jaw_opening_mm": 0.05,
+      "estimated_downward_force_per_clip_N": 0.03452119148641941,
+      "estimated_two_clips_force_N": 0.06904238297283882,
+      "max_bending_strain": 0.0005646776929233431,
+      "force_balance_error_N": 2.7284841053187847e-10,
+      "reference_horizontal_reaction_N": -2.6618707238412753e-12,
+      "reference_moment_Nmm": 2.4040218704612926e-09
+    },
+    {
+      "slide_thickness_mm": 0.9,
+      "required_jaw_opening_mm": 0.15,
+      "estimated_downward_force_per_clip_N": 0.10356357403725269,
+      "estimated_two_clips_force_N": 0.20712714807450539,
+      "max_bending_strain": 0.00169403307154492,
+      "force_balance_error_N": 2.091837814077735e-10,
+      "reference_horizontal_reaction_N": -8.474998480778595e-12,
+      "reference_moment_Nmm": -3.0050841814954765e-09
+    },
+    {
+      "slide_thickness_mm": 1.0,
+      "required_jaw_opening_mm": 0.25,
+      "estimated_downward_force_per_clip_N": 0.17260595658808597,
+      "estimated_two_clips_force_N": 0.34521191317617195,
+      "max_bending_strain": 0.0028233884501685505,
+      "force_balance_error_N": 7.60337570682168e-10,
+      "reference_horizontal_reaction_N": -1.425703999302641e-11,
+      "reference_moment_Nmm": -8.411859653278952e-09
+    }
+  ]
+}

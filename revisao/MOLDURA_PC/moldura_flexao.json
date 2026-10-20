@@ -1,0 +1,90 @@
+{
+  "status": "linear estimate; not measured force, printed PC and glass stresses unverified",
+  "assumed_E_MPa": 2000.0,
+  "leaf_thickness_mm": 0.4,
+  "cover_contact_world_y_mm": 9.600000000000001,
+  "preload_nominal_mm": 0.15,
+  "new_leaves_single_line_need_slicing_review": true,
+  "results": [
+    {
+      "slide_mm": 0.8,
+      "cover_mm": 0.13,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.03132602819096064,
+        0.05886557569147044,
+        -0.031326027878094465,
+        -0.05886557587655261
+      ],
+      "max_beam_bending_strain": 0.0017935605093479796,
+      "force_balance_N": 1.2778400559909642e-10,
+      "contacts_compressive": true
+    },
+    {
+      "slide_mm": 0.8,
+      "cover_mm": 0.16,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.02929889979714062,
+        0.09621204948757622,
+        -0.02929889952065423,
+        -0.09621204965515062
+      ],
+      "max_beam_bending_strain": 0.0029314608828125968,
+      "force_balance_N": 1.0891199053730816e-10,
+      "contacts_compressive": true
+    },
+    {
+      "slide_mm": 0.9,
+      "cover_mm": 0.13,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.0939780845437781,
+        0.17659672707486607,
+        -0.09397808449807599,
+        -0.17659672712067476
+      ],
+      "max_beam_bending_strain": 0.005380681528058035,
+      "force_balance_N": -1.0658141036401503e-13,
+      "contacts_compressive": true
+    },
+    {
+      "slide_mm": 0.9,
+      "cover_mm": 0.16,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.09195095614995807,
+        0.2139432008705171,
+        -0.09195095611495319,
+        -0.21394320091863506
+      ],
+      "max_beam_bending_strain": 0.006518581901509155,
+      "force_balance_N": -1.3113066188452649e-11,
+      "contacts_compressive": true
+    },
+    {
+      "slide_mm": 1.0,
+      "cover_mm": 0.13,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.1566301409038715,
+        0.2943278784571248,
+        -0.15663014113670215,
+        -0.2943278782768175
+      ],
+      "max_beam_bending_strain": 0.008967802546733903,
+      "force_balance_N": -5.2523319027386606e-11,
+      "contacts_compressive": true
+    },
+    {
+      "slide_mm": 1.0,
+      "cover_mm": 0.16,
+      "contact_forces_N_roof_cover_lower_roof_lower_cover": [
+        0.1546030125246034,
+        0.33167435225368536,
+        -0.1546030126628466,
+        -0.33167435217183083
+      ],
+      "max_beam_bending_strain": 0.010105702920239155,
+      "force_balance_N": -5.638867150992155e-11,
+      "contacts_compressive": true
+    }
+  ],
+  "microscope_clearance": "objective dimensions missing",
+  "print_orientation": "pending support minimization"
+}

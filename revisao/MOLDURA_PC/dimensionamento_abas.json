@@ -1,0 +1,60 @@
+{
+  "status": "preliminary sizing, not full frame contact verification",
+  "model": "isolated Euler-Bernoulli cantilever with rigid base; E assumed 2000 MPa",
+  "leaf_width_mm": 2.4,
+  "leaf_length_mm": 4.5,
+  "leaf_thickness_mm": 0.4,
+  "free_cover_pad_height_mm": 0.38,
+  "root_fillet_required": true,
+  "minimum_stated_nozzle_mm": 0.4,
+  "single_line_leaf_requires_slicer_review": true,
+  "results": [
+    {
+      "slide_mm": 0.8,
+      "cover_mm": 0.13,
+      "nominal_opening_mm": 0.05,
+      "isolated_leaf_force_N": 0.0421399176954733,
+      "isolated_leaf_root_strain": 0.001481481481481483
+    },
+    {
+      "slide_mm": 0.8,
+      "cover_mm": 0.16,
+      "nominal_opening_mm": 0.08,
+      "isolated_leaf_force_N": 0.06742386831275726,
+      "isolated_leaf_root_strain": 0.002370370370370372
+    },
+    {
+      "slide_mm": 0.9,
+      "cover_mm": 0.13,
+      "nominal_opening_mm": 0.15,
+      "isolated_leaf_force_N": 0.1264197530864198,
+      "isolated_leaf_root_strain": 0.004444444444444445
+    },
+    {
+      "slide_mm": 0.9,
+      "cover_mm": 0.16,
+      "nominal_opening_mm": 0.18,
+      "isolated_leaf_force_N": 0.1517037037037038,
+      "isolated_leaf_root_strain": 0.005333333333333336
+    },
+    {
+      "slide_mm": 1.0,
+      "cover_mm": 0.13,
+      "nominal_opening_mm": 0.25,
+      "isolated_leaf_force_N": 0.21069958847736625,
+      "isolated_leaf_root_strain": 0.007407407407407406
+    },
+    {
+      "slide_mm": 1.0,
+      "cover_mm": 0.16,
+      "nominal_opening_mm": 0.28,
+      "isolated_leaf_force_N": 0.23598353909465022,
+      "isolated_leaf_root_strain": 0.008296296296296295
+    }
+  ],
+  "remaining": [
+    "coupled multi-contact frame flexion",
+    "objective envelope dimensions",
+    "actual PC print and glass contact trial"
+  ]
+}

@@ -1,0 +1,64 @@
+U-SLIDE K1C — PRESILHAS COM PAREDE EXTERNA, SEM BASE PLA
+
+ARQUIVOS E PRATOS
+U-Slide_K1C_FINAL.3mf: projeto editavel com quatro pratos.
+01: corpo TPU 85A com saia e dois apoios independentes.
+02: duas presilhas PLA, parede externa fechada e contorno do poco.
+03: tampa esquerda eSUN TPU-LW. 04: tampa direita eSUN TPU-LW.
+U-Slide_TPU_POCOS_SEQUENCIAIS_EXPERIMENTAL.gcode: corpo TPU com trajetos
+personalizados. Abrir diretamente para imprimir; refatiar o prato 01
+nao reproduz a sequencia e todas as conexoes personalizadas.
+Para clipes e tampas: abrir o 3MF, escolher prato e fatiar.
+
+PRESILHAS COM PAREDE EXTERNA — REVISAO ATUAL
+Prato02: duas pecas espelhadas, sem base PLA central.
+Parede traseira externa fechada emY12.7-13.5mm, fora da borda do vidro.
+Removidos relevo de argola, bloco alto e nervuras dessa revisao anterior.
+Abertura do poco definida apenas pelo recorte da placa superior.
+Placa superior1.60mm; parede da extremidade1.60mm; parede traseira.80mm.
+Exterior reto e quadrado, sem aba saliente, degrau ou chanfro.
+Ponta emX+/-40.1mm; comprimento total80.2mm. Parede e encaixe preservados.
+Parte sob slide.64mm; altura montada maximaZ2.12mm. Largura total26.2mm
+inclui parede externa de.80mm; largura do vidro25.4mm preservada.
+Slide nominal.90 + TPU.40 + cobrevidro.13-.16mm. Boca minima1.42mm.
+Montar a frio; cortar antenas; inserir pela extremidade curta sem forcar.
+IMPRIMIR NA ORIENTACAO DO PRATO: parede traseira externa apoiada na mesa.
+Fenda dos vidros cresce na vertical. Sem suportes fixos, suporte do
+fatiador desativado, sem brim. PLA220 C/mesa50 C, camada.08, primeira.20.
+Ironing mantido nas faces superiores da orientacao de impressao.
+Encaixe, resistencia e folga da objetiva ainda dependem da peca fisica.
+Visual: ../revisao/CLIPES_LATERAIS/clipes_u_preview.png
+CAD: ../revisao/CLIPES_LATERAIS/gera_laterais.py
+
+REFERENCIA ENVIADA PELO USUARIO
+Original preservado: /home/x/Downloads/case/case.3mf. Arquivo em metros,
+convertido para mm. Exterior 81 x 30 x 1,70 mm; piso sob vidro 0,30 mm;
+alojamento original 76,0 x 25,5 mm. Para slide 76,2 x 25,4 mm faltam
+0,20 mm de comprimento. Referencia corrigida com alojamento 76,5 x
+25,7 mm e quatro furos fechados em ../revisao/CASE_REFERENCIA/.
+Essa base serve APENAS de referencia; nao esta incluida no projeto final.
+
+CORPO TPU — PRESERVADO
+Slide: 76,2 x 25,4 mm. Cobrevidro: 60 x 24 mm, espessura presumida
+0,13–0,16 mm. Base TPU 0,40 mm, fenda de insercao 0,40 mm sob sapato
+oco. Saia continua fora do cobrevidro. Pocos com altura de 10 mm.
+Dois apoios vindos da mesa pela abertura, separacao nominal 0,16 mm;
+remover antes de inserir o cobrevidro. Vedacao depende do aquecimento.
+TPU 85A 240 C em todas as camadas, mesa 35 C; fluxo 100%; retracao
+0,4 mm a 30 mm/s. Camada 0,08 mm, primeira 0,20 mm. G-code: antena
+esquerda primeiro, base completa dos dois lados ate Z0,44, depois
+poco esquerdo inteiro e direito inteiro. Desvios pelo exterior e
+conexoes curtas de preenchimento na base solida; acessos locais aos
+apoios permanecem. Folga lateral fisica do cabecote nao confirmada.
+
+TAMPINHAS DIY
+Apoiam por tres pontos na borda do poco, com encaixe externo folgado.
+Imprimir uma por vez, teto na mesa, abertura para cima, sem suportes.
+Altura maxima montada Z11,6; liberar espaco para objetivas se necessario.
+Respiro lateral com anteparo; conferir se a espuma nao fechou o respiro.
+Perfil INICIAL eSUN TPU-LW: 250 C, mesa 45 C, fluxo 70%, retracao zero.
+Ajuste de expansao/fluxo ainda necessario para a bobina/impressora.
+Fonte: https://www.esun3d.com/etpu-lw-product
+Troca de CO2, evaporacao, esterilidade e compatibilidade com celulas
+nao validadas. A espuma nao equivale a uma membrana validada de CO2.
+Nenhuma mudanca desta revisao foi enviada automaticamente a impressora.
