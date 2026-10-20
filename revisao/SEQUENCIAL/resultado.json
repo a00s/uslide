@@ -1,22 +1,22 @@
 {
-  "source_sha256": "48d4a3b9631be100ba4a9af69ce058e1e8079777bc0a2bb71ea78ac69fb6bb5e",
-  "output_sha256": "41dde186c3e43ad6e7dd7406037e5b9fa83605413eafd75cdf43538a657d18bd",
-  "original_deposition_moves_preserved": 14181,
-  "deposition_moves_total": 14274,
+  "source_sha256": "d33c87210630fc78742efeaee66f4d2bfa6d31a880cff51f1a4825fd1a07927b",
+  "output_sha256": "4109391d49e7a58c56b55adb1f4d5fe3f8021d838d1516fc3f6bc68cb96dd98c",
+  "original_deposition_moves_preserved": 14070,
+  "deposition_moves_total": 14160,
   "connected_fill": {
-    "base_runs_before": 263,
-    "base_runs_after": 170,
-    "continuous_fill_links": 93,
-    "added_link_length_mm": 79.73858650144933,
-    "added_filament_mm": 1.4263886952390494,
+    "base_runs_before": 251,
+    "base_runs_after": 161,
+    "continuous_fill_links": 90,
+    "added_link_length_mm": 80.73775992687736,
+    "added_filament_mm": 1.4877408067992213,
     "maximum_link_mm": 1.5,
     "full_bead_within_base": true
   },
-  "positive_spatial_extrusion_mm": 347.52471,
+  "positive_spatial_extrusion_mm": 336.12496,
   "phases": [
     {
       "name": "BASE COMUM",
-      "runs": 170
+      "runs": 161
     },
     {
       "name": "ARGOLA ESQUERDA",
@@ -28,11 +28,11 @@
     },
     {
       "name": "POCO ESQUERDO COMPLETO",
-      "runs": 189
+      "runs": 190
     },
     {
       "name": "POCO DIREITO COMPLETO",
-      "runs": 189
+      "runs": 188
     }
   ],
   "base_completed_through_z_mm": 0.44,
@@ -42,7 +42,7 @@
     "Y": 122.028,
     "Z": 0.2
   },
-  "channel_detours": 107,
+  "channel_detours": 407,
   "clearance_verified": false,
   "transfer_height_mm": 15,
   "local_travel_lift_mm": 0.4,

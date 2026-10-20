@@ -16,7 +16,8 @@ simplesmente refatiando o 3MF. As presilhas e tampas são fatiadas a partir do p
 
 [Comparação U anterior / câmara D atual](revisao/CAMARA_D/camara_D_preview.png)
 
-A abertura passou de408 para923mm², mantendo altura0,4mm. Poços,
+A abertura passou de408 para982mm², incluindo a limpeza do fundo dos
+dois poços, mantendo altura0,4mm. Paredes dos poços,
 clipes e tampas foram preservados; G-code do corpo atualizado.
 
 ## Fontes e conferência
